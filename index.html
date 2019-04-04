@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+
+        function getGrade(letterGrade) {
+            if (letterGrade == "A"){
+                return 4;
+             }else if (letterGrade=="B") {
+                 return 3;
+             }else if(letterGrade=="C") {
+                 return 2;
+             }else if (letterGrade=="D") {
+                  return 1;
+             }else {
+                return 0;
+        }
+        }
+        function calc(){
+            var tcount=0, gpa1=0;
+            var bcount=0, gpa2=0;
+            var mcount=0, gpa3=0;
+
+
+            var gen01=document.getElementById("gen01").value;
+            var gen02=document.getElementById("gen02").value;
+            var biz01=document.getElementById("biz01").value;
+            var maj01=document.getElementById("maj01").value;
+
+
+            if (gen01!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen01)
+            }
+            if (gen02!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen02)
+            }
+            if (biz01!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz01);
+                gpa2=gpa2 + getGrade(biz01);
+            }
+            if (maj01!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj01);
+                gpa2=gpa2 + getGrade(maj01);
+                gpa3=gpa3 + getGrade(maj01);
+            }
+
+
+            document.getElementById("gpa1").innerText=gpa1/tcount;
+            document.getElementById("gpa2").innerText=gpa2/bcount;
+            document.getElementById("gpa3").innerText=gpa3/mcount;
+
+        }
+
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">GPA Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+    <h2>Course Schedule</h2>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Course</th>
+            <th scope="col">Credit Hours</th>
+            <th scope="col">Grade Earned</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Freshman Composition</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen01">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Freshman Composition II</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen02">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Applied Calculus</td>
+            <td>4</td>
+            <td>
+                <select class="form-control" id="biz01">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Management of business</td>
+            <td>4</td>
+            <td>
+                <select class="form-control" id="maj01">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+        <div class="row">
+            <button type="button" onclick="calc()">Submit & Calculate</button>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            Total GPA
+        </div>
+        <div class="col-sm">
+            Business GPA
+        </div>
+        <div class="col-sm">
+            Major GPA
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm" id="gpa1">
+            0.0
+        </div>
+        <div class="col-sm" id="gpa2">
+            0.0
+        </div>
+        <div class="col-sm" id="gpa3">
+            0.0
+        </div>
+    </div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
