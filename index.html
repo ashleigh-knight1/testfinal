@@ -27,8 +27,22 @@
 
             var gen01=document.getElementById("gen01").value;
             var gen02=document.getElementById("gen02").value;
+            var gen03=document.getElementById("gen03").value;
+            var gen04=document.getElementById("gen04").value;
+            var gen05=document.getElementById("gen05").value;
+            var gen06=document.getElementById("gen06").value;
+            var gen07=document.getElementById("gen07").value;
+            var gen08=document.getElementById("gen08").value;
+          //  var gen09=document.getElementById("gen09").value;
+            //var gen10=document.getElementById("gen10").value;
+
             var biz01=document.getElementById("biz01").value;
+            var biz02=document.getElementById("biz02").value;
+            var biz03=document.getElementById("biz03").value;
+            var biz04=document.getElementById("biz04").value;
+
             var maj01=document.getElementById("maj01").value;
+
 
 
             if (gen01!=="-"){
@@ -39,12 +53,54 @@
                 tcount=tcount+1;
                 gpa1=gpa1 + getGrade(gen02)
             }
+            if (gen03!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen03)
+            }
+            if (gen04!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen04)
+            } if (gen05!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen05)
+            }
+            if (gen06!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen06)
+            }
+            if (gen07!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen07)
+            }
+            if (gen08!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen08)
+            }
+
             if (biz01!=="-"){
                 tcount=tcount+1;
                 bcount=bcount+1;
                 gpa1=gpa1 + getGrade(biz01);
                 gpa2=gpa2 + getGrade(biz01);
             }
+            if (biz02!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz02);
+                gpa2=gpa2 + getGrade(biz02);
+            }
+            if (biz03!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz03);
+                gpa2=gpa2 + getGrade(biz03);
+            } if (biz04!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz04);
+                gpa2=gpa2 + getGrade(biz04);
+            }
+
             if (maj01!=="-"){
                 tcount=tcount+1;
                 bcount=bcount+1;
@@ -82,7 +138,7 @@
         </div>
     </nav>
     <div class="container">
-    <h2>Course Schedule</h2>
+    <h2>International Business Course Schedule</h2>
     <table class="table">
         <thead>
         <tr>
@@ -95,7 +151,7 @@
         <tbody>
         <tr>
             <th scope="row">1</th>
-            <td>Freshman Composition</td>
+            <td>Freshman Composition I</td>
             <td>3</td>
             <td>
                 <select class="form-control" id="gen01">
@@ -147,6 +203,150 @@
             <td>4</td>
             <td>
                 <select class="form-control" id="maj01">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>College Algebra II</td>
+            <td>4</td>
+            <td>
+                <select class="form-control" id="gen03">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>Spanish 2</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen04">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Spanish 3</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen05">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>Business Problem Solving</td>
+            <td>2</td>
+            <td>
+                <select class="form-control" id="biz02">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>African-American Film</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen06">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">10</th>
+            <td>Physical Education-Pilates</td>
+            <td>1</td>
+            <td>
+                <select class="form-control" id="gen07">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">11</th>
+            <td>Intro to Psychology</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen08">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">12</th>
+            <td>Business Orientation I</td>
+            <td>1</td>
+            <td>
+                <select class="form-control" id="biz03">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">13</th>
+            <td>Business Orientation II</td>
+            <td>1</td>
+            <td>
+                <select class="form-control" id="biz04">
                     <option>-</option>
                     <option>A</option>
                     <option>B</option>
