@@ -33,22 +33,55 @@
             var gen06=document.getElementById("gen06").value;
             var gen07=document.getElementById("gen07").value;
             var gen08=document.getElementById("gen08").value;
-          //  var gen09=document.getElementById("gen09").value;
-            //var gen10=document.getElementById("gen10").value;
+            var gen09=document.getElementById("gen09").value;
+            var gen10=document.getElementById("gen10").value;
+            var gen11=document.getElementById("gen11").value;
+            var gen12=document.getElementById("gen12").value;
 
             var biz01=document.getElementById("biz01").value;
             var biz02=document.getElementById("biz02").value;
             var biz03=document.getElementById("biz03").value;
             var biz04=document.getElementById("biz04").value;
+            var biz05=document.getElementById("biz05").value;
+            var biz06=document.getElementById("biz06").value;
+            var biz07=document.getElementById("biz07").value;
+            var biz08=document.getElementById("biz08").value;
+            var biz09=document.getElementById("biz09").value;
+            var biz10=document.getElementById("biz10").value;
+            var biz11=document.getElementById("biz11").value;
+            var biz12=document.getElementById("biz12").value;
+            var biz13=document.getElementById("biz13").value;
+            var biz14=document.getElementById("biz14").value;
+            var biz15=document.getElementById("biz15").value;
+            var biz16=document.getElementById("biz16").value;
+            var biz17=document.getElementById("biz17").value;
+            var biz18=document.getElementById("biz18").value;
+            var biz19=document.getElementById("biz19").value;
+            var biz20=document.getElementById("biz20").value;
+            var biz21=document.getElementById("biz21").value;
+
 
             var maj01=document.getElementById("maj01").value;
+            var maj02=document.getElementById("maj02").value;
+            var maj03=document.getElementById("maj03").value;
+            var maj04=document.getElementById("maj04").value;
+            var maj05=document.getElementById("maj05").value;
+            var maj06=document.getElementById("maj06").value;
+            var maj07=document.getElementById("maj07").value;
+            var maj08=document.getElementById("maj08").value;
+            var maj09=document.getElementById("maj09").value;
+            var maj10=document.getElementById("maj10").value;
 
 
+            var message;
 
-            if (gen01!=="-"){
+            if ((gen01== "A")||(gen01=="B") ||(gen01=="C") ||(gen01=="D") ||(gen01=="F")){
                 tcount=tcount+1;
-                gpa1=gpa1 + getGrade(gen01)
+               gpa1=gpa1 + getGrade(gen01)
             }
+           // if(gen01="P"){
+           //     message="You have passed a course."
+           // }
             if (gen02!=="-"){
                 tcount=tcount+1;
                 gpa1=gpa1 + getGrade(gen02)
@@ -76,6 +109,22 @@
                 tcount=tcount+1;
                 gpa1=gpa1 + getGrade(gen08)
             }
+            if (gen09!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen09)
+            }
+            if (gen10!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen10)
+            }
+            if (gen11!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen11)
+            }
+            if (gen12!=="-"){
+                tcount=tcount+1;
+                gpa1=gpa1 + getGrade(gen12)
+            }
 
             if (biz01!=="-"){
                 tcount=tcount+1;
@@ -100,6 +149,104 @@
                 gpa1=gpa1 + getGrade(biz04);
                 gpa2=gpa2 + getGrade(biz04);
             }
+            if (biz05!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz05);
+                gpa2=gpa2 + getGrade(biz05);
+            }if (biz06!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz06);
+                gpa2=gpa2 + getGrade(biz06);
+            }
+            if (biz07!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz07);
+                gpa2=gpa2 + getGrade(biz07);
+            }if (biz08!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz08);
+                gpa2=gpa2 + getGrade(biz08);
+            }if (biz09!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz09);
+                gpa2=gpa2 + getGrade(biz09);
+            }
+            if (biz10!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz10);
+                gpa2=gpa2 + getGrade(biz10);
+            }if (biz11!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz11);
+                gpa2=gpa2 + getGrade(biz11);
+            }
+            if (biz12!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz12);
+                gpa2=gpa2 + getGrade(biz12);
+            }
+            if (biz13!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz13);
+                gpa2=gpa2 + getGrade(biz13);
+            }
+            if (biz14!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz14);
+                gpa2=gpa2 + getGrade(biz14);
+            }
+            if (biz15!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz15);
+                gpa2=gpa2 + getGrade(biz15);
+            }
+            if (biz16!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz16);
+                gpa2=gpa2 + getGrade(biz16);
+            }
+            if (biz17!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz17);
+                gpa2=gpa2 + getGrade(biz17);
+            }
+            if (biz18!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz18);
+                gpa2=gpa2 + getGrade(biz18);
+            }
+            if (biz19!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz19);
+                gpa2=gpa2 + getGrade(biz19);
+            }
+            if (biz20!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz20);
+                gpa2=gpa2 + getGrade(biz20);
+            }
+            if (biz21!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                gpa1=gpa1 + getGrade(biz21);
+                gpa2=gpa2 + getGrade(biz21);
+            }
 
             if (maj01!=="-"){
                 tcount=tcount+1;
@@ -109,6 +256,79 @@
                 gpa2=gpa2 + getGrade(maj01);
                 gpa3=gpa3 + getGrade(maj01);
             }
+            if (maj02!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj02);
+                gpa2=gpa2 + getGrade(maj02);
+                gpa3=gpa3 + getGrade(maj02);
+            }
+            if (maj03!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj03);
+                gpa2=gpa2 + getGrade(maj03);
+                gpa3=gpa3 + getGrade(maj03);
+            }
+            if (maj04!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj04);
+                gpa2=gpa2 + getGrade(maj04);
+                gpa3=gpa3 + getGrade(maj04);
+            }
+            if (maj05!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj05);
+                gpa2=gpa2 + getGrade(maj05);
+                gpa3=gpa3 + getGrade(maj05);
+            }
+            if (maj06!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj06);
+                gpa2=gpa2 + getGrade(maj06);
+                gpa3=gpa3 + getGrade(maj06);
+            }
+            if (maj07!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj07);
+                gpa2=gpa2 + getGrade(maj07);
+                gpa3=gpa3 + getGrade(maj07);
+            }
+            if (maj08!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj08);
+                gpa2=gpa2 + getGrade(maj08);
+                gpa3=gpa3 + getGrade(maj08);
+            }
+            if (maj09!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj09);
+                gpa2=gpa2 + getGrade(maj09);
+                gpa3=gpa3 + getGrade(maj09);
+            }
+            if (maj10!=="-"){
+                tcount=tcount+1;
+                bcount=bcount+1;
+                mcount=mcount +1;
+                gpa1=gpa1 + getGrade(maj10);
+                gpa2=gpa2 + getGrade(maj10);
+                gpa3=gpa3 + getGrade(maj10);
+            }
+
 
 
             document.getElementById("gpa1").innerText=gpa1/tcount;
@@ -199,7 +419,7 @@
         </tr>
         <tr>
             <th scope="row">4</th>
-            <td>Management of business</td>
+            <td>Management & Org Behaviour</td>
             <td>4</td>
             <td>
                 <select class="form-control" id="maj01">
@@ -347,6 +567,486 @@
             <td>1</td>
             <td>
                 <select class="form-control" id="biz04">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">14</th>
+            <td>Spanish III</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz05">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">15</th>
+            <td>Principles of Economics I</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz06">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">16</th>
+            <td>Accounting Principles I</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz07">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">17</th>
+            <td>Management Information Systems</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz08">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">18</th>
+            <td>Career Counseling</td>
+            <td>1</td>
+            <td>
+                <select class="form-control" id="biz09">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">19</th>
+            <td>Spanish IV</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz10">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr><tr>
+            <th scope="row">20</th>
+            <td>Principles of Economics II</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz11">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <th scope="row">21</th>
+            <td>Accounting Principles II</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz12">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">22</th>
+            <td>Statistics- Bus&Economics</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz13">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">23</th>
+            <td>Business Communication</td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz14">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">24</th>
+            <td>Physical Education-Health</td>
+            <td>1</td>
+            <td>
+                <select class="form-control" id="gen09">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">25</th>
+            <td>Quantitative Business Analysis  </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz15">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">26</th>
+            <td>Principles of Int'l Business </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj02">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">27</th>
+            <td>Principles of Marketing </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz16">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">28</th>
+            <td> Business Law </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz17">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">29</th>
+            <td>Production & Operation Mgmt </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz18">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">30</th>
+            <td>International Marketing </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj03">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">31</th>
+            <td>Finance Principles </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz19">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">32</th>
+            <td>Science Elective </td>
+            <td>3-4</td>
+            <td>
+                <select class="form-control" id="gen10">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">33</th>
+            <td>Intro to Cultural Anthropology </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen11">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">34</th>
+            <td>Int'l Financial Management </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj04">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">35</th>
+            <td>Int'l Business Elective </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj05">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">36</th>
+            <td>Managerial Economics </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz20">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">37</th>
+            <td>Functional or Regional Concentration </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj06">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">38</th>
+            <td>Functional or Regional Concentration </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj07">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">39</th>
+            <td>Functional or Regional Concentration </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj08">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">40</th>
+            <td>Functional or Regional Concentration </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj09">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">41</th>
+            <td>Management of Int'l Business </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="maj10">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">42</th>
+            <td>Business Policy </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="biz21">
+                    <option>-</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>F</option>
+                    <option>P</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">43</th>
+            <td>Intro to Political Science </td>
+            <td>3</td>
+            <td>
+                <select class="form-control" id="gen12">
                     <option>-</option>
                     <option>A</option>
                     <option>B</option>
